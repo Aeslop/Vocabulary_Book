@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="这里显示单词"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:id="@+id/recite_tv_word"
+        android:layout_weight="0.01" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="这里显示翻译"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/recite_tv_translate"/>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_marginRight="20sp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/icon_my_touxiang"
+            android:textSize="20sp"
+            android:text="认识"
+            android:id="@+id/recite_btn_renshi"/>
+        <Button
+            android:layout_marginRight="20sp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/icon_my_touxiang"
+            android:text="不认识"
+            android:id="@+id/recite_btn_burenshi"
+            android:textSize="20sp"/>
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/icon_my_touxiang"
+            android:text="下一个"
+            android:id="@+id/recite_btn_next"
+            android:textSize="20sp"/>
+    </LinearLayout>
+</LinearLayout>

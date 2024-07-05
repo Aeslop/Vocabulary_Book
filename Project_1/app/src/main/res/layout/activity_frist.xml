@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_frist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_fragment_bg">
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/title">
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="开始你的单词！"
+            android:textSize="30sp"
+            android:id="@+id/first_tv"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="欢迎您,"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="你好"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/name"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/first_fl">
+
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/first_fl"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+        <Button
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="录入"
+            android:textSize="16sp"
+            android:background="@drawable/icon_button"
+            android:id="@+id/frist_btn_input"
+            />
+        <Button
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="背诵"
+            android:textSize="16sp"
+            android:background="@drawable/icon_button"
+            android:id="@+id/frist_btn_recite"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人中心"
+            android:textSize="16sp"
+            android:background="@drawable/icon_button"
+            android:id="@+id/frist_btn_self"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
